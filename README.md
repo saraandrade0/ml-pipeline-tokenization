@@ -1,3 +1,10 @@
+<p align="left">
+  <a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-3.11+-blue.svg"></a>
+  <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
+  <a href="https://github.com/saraandrade0/ml-pipeline-tokenization/commits/main"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/saraandrade0/ml-pipeline-tokenization.svg"></a>
+  <a href="https://github.com/saraandrade0/ml-pipeline-tokenization/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/saraandrade0/ml-pipeline-tokenization?style=social"></a>
+</p>
+
 
 # 🧩 ML Pipeline: Tokenization & Classification
 
@@ -64,12 +71,23 @@ models/tfidf.joblib
 models/modelo_lr.joblib
 
 scores.csv
+## 📈 Score distribution
 
-📊 Example Results
-id	score
-1	0.36524
-2	0.68042
-3	0.22093
+Below is the distribution of predicted probabilities on the sample dataset:
+
+<p align="center">
+  <img src="assets/score_hist.png" alt="Score distribution" width="520">
+</p>
+
+
+## 📐 Threshold metrics 
+
+| threshold | precision | recall | f1   |
+|-----------|-----------|--------|------|
+| 0.30      | 0.78      | 0.86   | 0.82 |
+| 0.50      | 0.81      | 0.80   | 0.80 |
+| 0.70      | 0.88      | 0.65   | 0.75 |
+
 
 🛠️ Tech Stack
 Python 3.11+
